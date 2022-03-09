@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import NavBar from "components/navbar/NavBar";
-import Listing from "pages/Listing/List";
-import Form from "pages/Form/Form";
+import NavBar from "components/navbar";
+import Listing from "pages/Listing";
+import Form from "pages/Form";
 
 function App() {
   return (   
