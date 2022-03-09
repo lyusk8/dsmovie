@@ -1,7 +1,9 @@
+import Pagination from  "components/Pagination";
+
 const List = () => {
   
   return(
-    <h1>Pagina de Listagem</h1>
+    <Pagination/>
   )
 }
 
