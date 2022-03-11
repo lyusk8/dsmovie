@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @AllArgsConstructor
@@ -22,5 +24,7 @@ public class Movie {
     private Integer count;
     private String image;
 
+    @OneToMany(mappedBy = "id.movie" )
+    Set<Score> scores = new HashSet<>();
 
 }
