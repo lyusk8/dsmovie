@@ -20,7 +20,7 @@ public class ScoreService {
     private final UserRepository userRepository;
     private final ScoreRepository repository;
 
-    @Transactional(readOnly = true)
+    @Transactional
     public MovieDto saveScore(ScoreDto dto){
         var user = userRepository.findByEmail(dto.getEmail());
         var movie = movieRepository.findById(dto.getMovieId()).get();
