@@ -1,9 +1,13 @@
 import Pagination from  "components/Pagination";
 import MovieCard from "components/MovieCard";
+import axios from "axios";
+import { BASE_URL} from 'utils/requests';
 
 const List = () => {
   
-  return(
+  axios.get(`${BASE_URL}/movies`)
+       .then((response) => { console.log(response.data)})
+  return(    
     <>
       <Pagination/>
       <div className="container">
